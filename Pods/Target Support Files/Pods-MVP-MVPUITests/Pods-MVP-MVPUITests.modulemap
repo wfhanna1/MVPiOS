@@ -1,0 +1,6 @@
+framework module Pods_MVP_MVPUITests {
+  umbrella header "Pods-MVP-MVPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

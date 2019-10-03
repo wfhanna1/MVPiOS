@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //App center GUID
+        MSAppCenter.start("2d7bbf2a-0141-49ad-aef1-5699a0120c5b", withServices:[
+          MSAnalytics.self,
+          MSCrashes.self
+        ])
         // Override point for customization after application launch.
         return true
     }
