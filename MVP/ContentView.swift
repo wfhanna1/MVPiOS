@@ -34,7 +34,7 @@ struct ContentView: View {
            TestView()
                 .tabItem {
                       VStack {
-                          Image("third")
+                          Image("first")
                           Text("Third")
                       }
                   }

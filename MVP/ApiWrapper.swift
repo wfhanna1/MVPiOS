@@ -9,20 +9,23 @@
 import Foundation
 
 class ApiWrapper {
-     func get(from urlString: String) -> String {
+     func get(from urlString: String, userCompletionHandler: @escaping (String?, Error?) -> Void) {
         let url = URL(string: urlString)!
         let request = URLRequest(url: url)
         var responseString = ""
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             guard let data = data else {
                 return
             }
             do {
-                responseString = String(data: data, encoding: .utf8) ?? responseString
+                    responseString = String(data: data, encoding: .utf8) ?? responseString
+                userCompletionHandler(responseString, nil)
+            } catch let parseErr {
+              userCompletionHandler(nil, parseErr)
             }
-        }
+        })
+        
         task.resume()
-        return responseString
     }
     
 //    public func post(from urlString: String) {

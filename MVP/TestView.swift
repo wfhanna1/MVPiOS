@@ -11,11 +11,10 @@ import SwiftUI
 struct TestView: View {
     var body: some View {
         let testApi = ApiWrapper()
-        var data = testApi.get(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent")
-        return Text("Hello World")
-    }
-    private func callRecentApi() {
-        
+        testApi.get(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent", userCompletionHandler: {data, error in
+            print(data)
+        })
+        return Text("Dummy Text")
     }
 }
 
