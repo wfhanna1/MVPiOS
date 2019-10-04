@@ -17,6 +17,8 @@
 		A09C53B723464763000AC0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09C53B523464763000AC0CC /* LaunchScreen.storyboard */; };
 		A09C53C223464763000AC0CC /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C53C123464763000AC0CC /* MVPTests.swift */; };
 		A09C53CD23464763000AC0CC /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C53CC23464763000AC0CC /* MVPUITests.swift */; };
+		A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357432347B4BD000B34E3 /* ApiWrapper.swift */; };
+		A0F357482347CB2C000B34E3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357472347CB2C000B34E3 /* TestView.swift */; };
 		C9F790ECEA2227DE8EE81BDA /* Pods_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		A09C53C823464763000AC0CC /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09C53CC23464763000AC0CC /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		A09C53CE23464763000AC0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F357432347B4BD000B34E3 /* ApiWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWrapper.swift; sourceTree = "<group>"; };
+		A0F357472347CB2C000B34E3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DBCD58D8A41A20B19DE7FF45 /* Pods-MVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTests.release.xcconfig"; path = "Target Support Files/Pods-MVPTests/Pods-MVPTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6EEAD93E38EC21E9E0781C7 /* Pods-MVP-MVPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-MVPUITests.release.xcconfig"; path = "Target Support Files/Pods-MVP-MVPUITests/Pods-MVP-MVPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E96267416627AB1DF7792373 /* Pods-MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTests.debug.xcconfig"; path = "Target Support Files/Pods-MVPTests/Pods-MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				E96267416627AB1DF7792373 /* Pods-MVPTests.debug.xcconfig */,
 				DBCD58D8A41A20B19DE7FF45 /* Pods-MVPTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +150,8 @@
 				A09C53B523464763000AC0CC /* LaunchScreen.storyboard */,
 				A09C53B823464763000AC0CC /* Info.plist */,
 				A09C53B223464763000AC0CC /* Preview Content */,
+				A0F357432347B4BD000B34E3 /* ApiWrapper.swift */,
+				A0F357472347CB2C000B34E3 /* TestView.swift */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -381,7 +386,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09C53AB23464762000AC0CC /* AppDelegate.swift in Sources */,
+				A0F357482347CB2C000B34E3 /* TestView.swift in Sources */,
 				A09C53AD23464762000AC0CC /* SceneDelegate.swift in Sources */,
+				A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */,
 				A09C53AF23464762000AC0CC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
