@@ -20,6 +20,9 @@
 		A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357432347B4BD000B34E3 /* ApiWrapper.swift */; };
 		A0F357482347CB2C000B34E3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357472347CB2C000B34E3 /* TestView.swift */; };
 		C9F790ECEA2227DE8EE81BDA /* Pods_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */; };
+		FC3055E7234D088F00907AF5 /* ScoreRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3055E6234D088F00907AF5 /* ScoreRepo.swift */; };
+		FC3E2CBF234BC96400D6A726 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E2CBE234BC96400D6A726 /* Score.swift */; };
+		FC3E2CC1234BCB9400D6A726 /* ScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E2CC0234BCB9400D6A726 /* ScoresViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		E6EEAD93E38EC21E9E0781C7 /* Pods-MVP-MVPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-MVPUITests.release.xcconfig"; path = "Target Support Files/Pods-MVP-MVPUITests/Pods-MVP-MVPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E96267416627AB1DF7792373 /* Pods-MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTests.debug.xcconfig"; path = "Target Support Files/Pods-MVPTests/Pods-MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3055E6234D088F00907AF5 /* ScoreRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepo.swift; sourceTree = "<group>"; };
+		FC3E2CBE234BC96400D6A726 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FC3E2CC0234BCB9400D6A726 /* ScoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewModel.swift; sourceTree = "<group>"; };
 		FEB01FE4A48F2DC193F64AE5 /* Pods_MVP_MVPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_MVPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,8 @@
 		A09C53A923464762000AC0CC /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				FC3055E5234D086C00907AF5 /* Repos */,
+				FC3E2CBD234BC45F00D6A726 /* Objects */,
 				A09C53AA23464762000AC0CC /* AppDelegate.swift */,
 				A09C53AC23464762000AC0CC /* SceneDelegate.swift */,
 				A09C53AE23464762000AC0CC /* ContentView.swift */,
@@ -152,6 +160,7 @@
 				A09C53B223464763000AC0CC /* Preview Content */,
 				A0F357432347B4BD000B34E3 /* ApiWrapper.swift */,
 				A0F357472347CB2C000B34E3 /* TestView.swift */,
+				FC3E2CC0234BCB9400D6A726 /* ScoresViewModel.swift */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -180,6 +189,22 @@
 				A09C53CE23464763000AC0CC /* Info.plist */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		FC3055E5234D086C00907AF5 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				FC3055E6234D088F00907AF5 /* ScoreRepo.swift */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		FC3E2CBD234BC45F00D6A726 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E2CBE234BC96400D6A726 /* Score.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,8 +412,11 @@
 			files = (
 				A09C53AB23464762000AC0CC /* AppDelegate.swift in Sources */,
 				A0F357482347CB2C000B34E3 /* TestView.swift in Sources */,
+				FC3E2CC1234BCB9400D6A726 /* ScoresViewModel.swift in Sources */,
 				A09C53AD23464762000AC0CC /* SceneDelegate.swift in Sources */,
+				FC3055E7234D088F00907AF5 /* ScoreRepo.swift in Sources */,
 				A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */,
+				FC3E2CBF234BC96400D6A726 /* Score.swift in Sources */,
 				A09C53AF23464762000AC0CC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
