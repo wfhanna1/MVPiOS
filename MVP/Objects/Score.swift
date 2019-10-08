@@ -33,7 +33,7 @@ struct score: Codable {
         case gameID = "gameId"
         case game, date
     }
-    static func getModels(json: [JsonDictionary]) -> [score] {return json.map { score(json: $0) }}
+    //static func getModels(json: [JsonDictionary]) -> [score] {return json.map { score(json: $0) }}
 }
 
 // MARK: - Game
@@ -49,5 +49,5 @@ struct PlayerA: Codable {
     let fullName, emailAddress, profilePhoto: String
 }
 
-typealias Welcome = [WelcomeElement]
+//typealias Welcome = [WelcomeElement]
 

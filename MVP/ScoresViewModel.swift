@@ -17,9 +17,9 @@ class ScoresViewModel: ObservableObject {
     var currentScore:[score] = [];
     
     func GetCurrentScores() {
-        let scoresApi = ScoresRepo()
+        let scoreRepo = ScoreRepo()
         
-        scoresApi.get(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent", userCompletionHandler: {data
+        scoreRepo.GetScoresFromAPI(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent", userCompletionHandler: {data
             , error in
             self.currentScore = self.getdata(data: data)})
         

@@ -18,7 +18,7 @@ class ScoreRepo
         
         scoresApi.get(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent", userCompletionHandler: {data
             , error in
-            self.currentScore = self.getdata(data: data)})
+            self.currentScore = self.getdata(data: data!)})
         
     }
     
@@ -27,7 +27,7 @@ class ScoreRepo
         //let json = try? JSONSerialization.jsonObject(with: data, options: [])
 
         let jsonData = data.data(using: .utf8)!
-        let scoresObject = try! decoder.decode(score.self,  from: jsonData)
+        let scoresObject = try! decoder.decode([score].self,  from: jsonData)
         return scoresObject
     }
     
