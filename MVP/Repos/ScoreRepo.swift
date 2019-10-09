@@ -10,16 +10,14 @@ import Foundation
 
 class ScoreRepo
 {
-    var currentScore:[score] = [];
-    
-    func GetScoresFromAPI()
+    func GetScoresFromAPI(userCompletionHandler: @escaping ([score], Error?) -> Void)
     {
         let scoresApi = ApiWrapper()
         
         scoresApi.get(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent", userCompletionHandler: {data
             , error in
-            self.currentScore = self.getdata(data: data!)})
-        
+            userCompletionHandler(self.getdata(data: data!),nil)
+        })
     }
     
     func getdata(data: String) -> [score] {
@@ -27,6 +25,7 @@ class ScoreRepo
         //let json = try? JSONSerialization.jsonObject(with: data, options: [])
 
         let jsonData = data.data(using: .utf8)!
+        //let scoresObject = try? JSONDecoder().decode(score.self, from: jsonData)
         let scoresObject = try! decoder.decode([score].self,  from: jsonData)
         return scoresObject
     }
