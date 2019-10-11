@@ -21,6 +21,8 @@
 		A0F357482347CB2C000B34E3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357472347CB2C000B34E3 /* TestView.swift */; };
 		C9F790ECEA2227DE8EE81BDA /* Pods_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */; };
 		FC3055E7234D088F00907AF5 /* ScoreRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3055E6234D088F00907AF5 /* ScoreRepo.swift */; };
+		FC3800082350DE0000F2940A /* ScoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3800072350DE0000F2940A /* ScoreListViewModel.swift */; };
+		FC38000A2350E02D00F2940A /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3800092350E02D00F2940A /* ScoreView.swift */; };
 		FC3E2CBF234BC96400D6A726 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E2CBE234BC96400D6A726 /* Score.swift */; };
 		FC3E2CC1234BCB9400D6A726 /* ScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E2CC0234BCB9400D6A726 /* ScoresViewModel.swift */; };
 		FCB29E7C234E2D3B004FCE32 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB29E7B234E2D3B004FCE32 /* DataService.swift */; };
@@ -72,6 +74,8 @@
 		E96267416627AB1DF7792373 /* Pods-MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTests.debug.xcconfig"; path = "Target Support Files/Pods-MVPTests/Pods-MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3055E6234D088F00907AF5 /* ScoreRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepo.swift; sourceTree = "<group>"; };
+		FC3800072350DE0000F2940A /* ScoreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListViewModel.swift; sourceTree = "<group>"; };
+		FC3800092350E02D00F2940A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		FC3E2CBE234BC96400D6A726 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		FC3E2CC0234BCB9400D6A726 /* ScoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewModel.swift; sourceTree = "<group>"; };
 		FCB29E7B234E2D3B004FCE32 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB29E7E234E3542004FCE32 /* GistView.swift */,
+				FC3800092350E02D00F2940A /* ScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB29E83234E5C5B004FCE32 /* GistListViewModel.swift */,
+				FC3800072350DE0000F2940A /* ScoreListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -445,8 +451,10 @@
 				A0F357482347CB2C000B34E3 /* TestView.swift in Sources */,
 				FC3E2CC1234BCB9400D6A726 /* ScoresViewModel.swift in Sources */,
 				A09C53AD23464762000AC0CC /* SceneDelegate.swift in Sources */,
+				FC38000A2350E02D00F2940A /* ScoreView.swift in Sources */,
 				FC3055E7234D088F00907AF5 /* ScoreRepo.swift in Sources */,
 				A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */,
+				FC3800082350DE0000F2940A /* ScoreListViewModel.swift in Sources */,
 				FCB29E7F234E3542004FCE32 /* GistView.swift in Sources */,
 				FC3E2CBF234BC96400D6A726 /* Score.swift in Sources */,
 				A09C53AF23464762000AC0CC /* ContentView.swift in Sources */,

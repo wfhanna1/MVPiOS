@@ -11,9 +11,9 @@ import SwiftUI
 struct TestView: View {
     var body: some View {
         let test = ScoresViewModel()
-        test.GetCurrentScores(userCompletionHandler: {data, error in
-            print(data)
-        })
+//        test.GetCurrentScores(userCompletionHandler: {data, error in
+//            print(data)
+//        })
         return Text("Dummy Text")
     }
 }

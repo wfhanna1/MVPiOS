@@ -10,24 +10,42 @@ import Foundation
 
 class ScoreRepo
 {
-    func GetScoresFromAPI(userCompletionHandler: @escaping ([score], Error?) -> Void)
-    {
-        let scoresApi = ApiWrapper()
+     static let shared = ScoreRepo()
+      
         
-        scoresApi.get(from: "https://insightmvp-dev.azurewebsites.net/api/Matches/recent", userCompletionHandler: {data
-            , error in
-            userCompletionHandler(self.getdata(data: data!),nil)
-        })
-    }
-    
-    func getdata(data: String) -> [score] {
-        let decoder = JSONDecoder()
-        //let json = try? JSONSerialization.jsonObject(with: data, options: [])
-
-        let jsonData = data.data(using: .utf8)!
-        //let scoresObject = try? JSONDecoder().decode(score.self, from: jsonData)
-        let scoresObject = try! decoder.decode([score].self,  from: jsonData)
-        return scoresObject
-    }
+        func fetchScores(completion: @escaping (Result<[score], Error>) -> Void){
+    //        var baseURL = URL(string: baseURLString)
+    //        baseURL?.appendPathComponent("/SomePath")
+    //        let composedURL = URL(string:"/somepath", relativeTo: baseURL)
+            
+            var componetURL = URLComponents()
+            componetURL.scheme = "https"
+            componetURL.host = "insightmvp-dev.azurewebsites.net"
+            componetURL.path = "/api/Matches/recent"
+            
+            guard let validURL = componetURL.url else {
+                //print("url invald")
+                return
+            }
+            
+            URLSession.shared.dataTask(with: validURL) {(data,response,error) in
+                
+                guard let validData = data, error == nil else{
+                    completion(.failure(error!))
+                    return
+                }
+                
+                do {
+                    //let json = try JSONSerialization.jsonObject(with: validData, options:[])
+                    let scores = try JSONDecoder().decode([score].self, from: validData)
+                    completion(.success(scores))
+                } catch let serialicationError {
+                    completion(.failure(serialicationError))
+                }
+                
+            }.resume()
+            
+            
+        }
     
 }

@@ -16,13 +16,13 @@ class ScoresViewModel: ObservableObject {
     
     var currentScore:[score] = [];
     
-    func GetCurrentScores(userCompletionHandler: @escaping ([score], Error?) -> Void) {
-        let scoreRepo = ScoreRepo()
-        scoreRepo.GetScoresFromAPI(userCompletionHandler: {data, error in
-            self.currentScore = data
-            self.didChange.send(self)
-        })
-    }
+//    func GetCurrentScores(userCompletionHandler: @escaping ([score], Error?) -> Void) {
+//        let scoreRepo = ScoreRepo()
+//        scoreRepo.GetScoresFromAPI(userCompletionHandler: {data, error in
+//            self.currentScore = data
+//            self.didChange.send(self)
+//        })
+//    }
     
     
 }

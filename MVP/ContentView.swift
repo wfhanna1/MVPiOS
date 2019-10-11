@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            GistView()
+            ScoreView()
                 .tabItem {
                     VStack {
                         Image("second")

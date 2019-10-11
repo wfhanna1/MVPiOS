@@ -11,28 +11,33 @@ import Foundation
 
 
 // MARK: - WelcomeElement
-struct score: Codable {
-    let id, playerAID: Int
-    let playerA: PlayerA
-    let playerBID: Int
-    let playerB: PlayerA
-    let playerAPrediction, playerBPredicition, winnerID: Int
-    let winner: PlayerA
-    let gameID: Int
-    let game: Game
-    let date: String
+struct score: Codable, Identifiable {
 
-    enum CodingKeys: String, CodingKey {
-        case id
-        case playerAID = "playerAId"
-        case playerA
-        case playerBID = "playerBId"
-        case playerB, playerAPrediction, playerBPredicition
-        case winnerID = "winnerId"
-        case winner
-        case gameID = "gameId"
-        case game, date
-    }
+    
+    var id: Int
+//    var playerAID: Int
+//    let playerA: PlayerA
+//    var playerBID: Int
+//    let playerB: PlayerA
+//    var playerAPrediction
+//    var playerBPredicition: Int
+//    var winnerID: Int
+//    let winner: PlayerA
+//    var gameID: Int
+//    let game: Game
+//    var date: String
+
+//    enum CodingKeys: String, CodingKey {
+//        case id
+//        case playerAID = "playerAId"
+//        case playerA
+//        case playerBID = "playerBId"
+//        case playerB, playerAPrediction, playerBPredicition
+//        case winnerID = "winnerId"
+//        case winner
+//        case gameID = "gameId"
+//        case game, date
+//    }
     //static func getModels(json: [JsonDictionary]) -> [score] {return json.map { score(json: $0) }}
 }
 

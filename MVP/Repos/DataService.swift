@@ -28,10 +28,6 @@ class DataService {
         }
         
         URLSession.shared.dataTask(with: validURL) {(data,response,error) in
-//            if let httpResponse = response as? HTTPURLResponse {
-//                //print("API status \(httpResponse.statusCode)")
-//                return
-//            }
             
             guard let validData = data, error == nil else{
                 completion(.failure(error!))
