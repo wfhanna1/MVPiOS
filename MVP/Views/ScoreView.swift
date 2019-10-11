@@ -16,7 +16,8 @@ struct ScoreView: View {
     var body: some View {
      
         List(model.scores){score in
-            Text(String(score.id))
+            //Text(String(score.id))
+            Text(score.playerA.fullName)
         }
     }
 }

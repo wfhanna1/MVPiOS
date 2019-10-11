@@ -30,7 +30,7 @@ struct ContentView: View {
                     }
                 }	
                 .tag(1)
-           TestView()
+           GistView()
                 .tabItem {
                       VStack {
                           Image("first")

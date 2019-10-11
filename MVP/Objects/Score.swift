@@ -15,17 +15,17 @@ struct score: Codable, Identifiable {
 
     
     var id: Int
-//    var playerAID: Int
-//    let playerA: PlayerA
-//    var playerBID: Int
-//    let playerB: PlayerA
-//    var playerAPrediction
-//    var playerBPredicition: Int
-//    var winnerID: Int
-//    let winner: PlayerA
-//    var gameID: Int
-//    let game: Game
-//    var date: String
+    var playerAId: Int
+    var playerA: Player
+    var playerBId: Int
+    var playerB: Player
+    var playerAPrediction: Decimal
+    var playerBPredicition: Decimal
+    var winnerId: Int
+    var winner: Player
+    var gameId: Int
+    var game: Game
+    var date: String
 
 //    enum CodingKeys: String, CodingKey {
 //        case id
@@ -43,15 +43,17 @@ struct score: Codable, Identifiable {
 
 // MARK: - Game
 struct Game: Codable {
-    let id: Int
-    let name: String
-    let kFactor: Int
+    var id: Int
+    var name: String
+    var kFactor: Int
 }
 
 // MARK: - PlayerA
-struct PlayerA: Codable {
-    let id: Int
-    let fullName, emailAddress, profilePhoto: String
+struct Player: Codable {
+    var id: Int
+    var fullName: String
+    var emailAddress: String
+    //var profilePhoto: String
 }
 
 //typealias Welcome = [WelcomeElement]
