@@ -11,23 +11,25 @@ import SwiftUI
 import Combine
 
 final class ScoreListViewModel: ObservableObject {
-    
+    let didChange = PassthroughSubject<ScoreListViewModel,Never>()
+
     init() {
         fetchScores()
     }
 
     var scores = [score](){
         didSet {
-            didChange.send(self)
+            self.didChange.send(self)
         }
     }
 
-    private func fetchScores(){
+    func fetchScores(){
 
         ScoreRepo.shared.fetchScores { (result) in
             switch result {
             case .success(let scoresReturn):
                 self.scores = scoresReturn
+                self.didChange.send(self)
             case .failure(let error):
                 print(error)
             }
@@ -35,5 +37,5 @@ final class ScoreListViewModel: ObservableObject {
         }
     }
     
-    let didChange = PassthroughSubject<ScoreListViewModel,Never>()
+    
 }

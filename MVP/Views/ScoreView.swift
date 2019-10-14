@@ -17,8 +17,12 @@ struct ScoreView: View {
      
         List(model.scores){score in
             //Text(String(score.id))
-            Text(score.playerA.fullName)
+            Text(score.playerA.fullName + " - " + score.playerB.fullName)
+
+            
         }
+        .padding(.top)
+        .background(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
     }
 }
 

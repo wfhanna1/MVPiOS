@@ -9,8 +9,6 @@
 import SwiftUI
 
 
-
-
 struct GistView: View {
     
     @State var model = GistListViewModel()
@@ -22,6 +20,7 @@ struct GistView: View {
         }
     }
 }
+
 
 struct TestView2_Previews: PreviewProvider {
     static var previews: some View {
