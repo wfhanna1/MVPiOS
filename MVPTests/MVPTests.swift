@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MVP
+//@testable import MVP
 
 class MVPTests: XCTestCase {
 
