@@ -22,16 +22,15 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            ScoreView()
                 .tabItem {
                     VStack {
                         Image("second")
                         Text("Second")
                     }
-                }
+                }	
                 .tag(1)
-           TestView()
+           GistView()
                 .tabItem {
                       VStack {
                           Image("first")
