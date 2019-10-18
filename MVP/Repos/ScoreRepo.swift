@@ -19,9 +19,9 @@ class ScoreRepo
     //        let composedURL = URL(string:"/somepath", relativeTo: baseURL)
             
             var componetURL = URLComponents()
-            componetURL.scheme = "https"
-            componetURL.host = "insightmvp-dev.azurewebsites.net"
-            componetURL.path = "/api/Matches/recent"
+            componetURL.scheme = Environment.httpScheme
+            componetURL.host = Environment.baseUrl
+            componetURL.path = Environment.scoreUrl
             
             guard let validURL = componetURL.url else {
                 //print("url invald")
