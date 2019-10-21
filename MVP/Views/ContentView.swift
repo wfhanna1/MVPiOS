@@ -37,7 +37,7 @@ struct ContentView: View {
                           Image(systemName: "list.number")
                           Text("Scores")
                       }
-                  }
+                }
            .tag(2)
             
 

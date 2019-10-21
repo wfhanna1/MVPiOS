@@ -10,16 +10,18 @@ import SwiftUI
 
 struct LeaderBoardView: View {
     @ObservedObject var model = LeaderBoardViewModel()
-    
+    let fontColor = UIColor(red:0.88, green:0.15, blue:0.40, alpha:1.0)
     var body: some View {
         VStack{
             Image("HomeBackgroud")
                 .scaledToFit()
             List(model.Leaders){leader in
-                //Text(String(score.id))
-                 //leaderId = String(leader.id)
-                Text("\(leader.id)")// + " - " + leader.average)
 
+                VStack(alignment: .leading){
+                    Text("Foosball").font(.headline).foregroundColor(.pink)
+                    Text("\(leader.player[0].fullName)").bold()
+                    Text("\(leader.average) Points")
+                }
                 
             }
         }

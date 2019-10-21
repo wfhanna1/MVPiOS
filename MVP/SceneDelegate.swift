@@ -29,10 +29,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
-        //UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().isTranslucent = true
         UITabBar.appearance().backgroundColor = UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0)
-        //UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.white], for: .normal)
         
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.white], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.backgroundColor : UIColor.blue], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.red], for: .disabled)
         
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

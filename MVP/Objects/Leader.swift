@@ -10,7 +10,8 @@ import Foundation
 
 // MARK: - LeaderElement
 struct Leader: Codable, Identifiable {
-    let average, id: Int
+    let id: Int
+    let average: Int
     let player: [Player]
     let games: Int
 }

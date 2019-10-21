@@ -15,3 +15,4 @@ HTTP_SCHEME = https
 BASE_URL = insightmvp-dev.azurewebsites.net
 SCORE_URL = /api/Matches/recent
 LEADERBOARD = /api/Ratings/topPlayers
+
