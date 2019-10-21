@@ -13,7 +13,8 @@ struct LeaderBoardView: View {
     
     var body: some View {
         VStack{
-            Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+            Image("HomeBackgroud")
+                .scaledToFit()
             List(model.Leaders){leader in
                 //Text(String(score.id))
                  //leaderId = String(leader.id)

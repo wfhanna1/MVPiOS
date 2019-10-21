@@ -21,7 +21,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-
+        
+        let appearnce = UITabBarAppearance()
+        appearnce.configureWithOpaqueBackground()
+        appearnce.backgroundColor = UIColor.red
+        //appearnce.isTranslucent = false
+        
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+        //UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().backgroundColor = UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0)
+        //UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.white], for: .normal)
+        
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
@@ -29,6 +41,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -41,6 +55,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
