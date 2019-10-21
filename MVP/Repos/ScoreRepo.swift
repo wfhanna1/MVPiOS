@@ -14,9 +14,6 @@ class ScoreRepo
       
         
         func fetchScores(completion: @escaping (Result<[score], Error>) -> Void){
-    //        var baseURL = URL(string: baseURLString)
-    //        baseURL?.appendPathComponent("/SomePath")
-    //        let composedURL = URL(string:"/somepath", relativeTo: baseURL)
             
             var componetURL = URLComponents()
             componetURL.scheme = Environment.httpScheme
@@ -47,5 +44,37 @@ class ScoreRepo
             
             
         }
+    
+    func fetchLeaderBoard(completion: @escaping (Result<[Leader], Error>) -> Void){
+              
+              var componetURL = URLComponents()
+              componetURL.scheme = Environment.httpScheme
+              componetURL.host = Environment.baseUrl
+              componetURL.path = Environment.leaderboardUrl
+              
+              guard let validURL = componetURL.url else {
+                  //print("url invald")
+                  return
+              }
+              
+              URLSession.shared.dataTask(with: validURL) {(data,response,error) in
+                  
+                  guard let validData = data, error == nil else{
+                      completion(.failure(error!))
+                      return
+                  }
+                  
+                  do {
+                      //let json = try JSONSerialization.jsonObject(with: validData, options:[])
+                      let Leaders = try JSONDecoder().decode([Leader].self, from: validData)
+                      completion(.success(Leaders))
+                  } catch let serialicationError {
+                      completion(.failure(serialicationError))
+                  }
+                  
+              }.resume()
+              
+              
+          }
     
 }
