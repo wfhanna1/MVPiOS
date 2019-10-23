@@ -30,6 +30,8 @@
 		FC3800082350DE0000F2940A /* ScoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3800072350DE0000F2940A /* ScoreListViewModel.swift */; };
 		FC38000A2350E02D00F2940A /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3800092350E02D00F2940A /* ScoreView.swift */; };
 		FC3E2CBF234BC96400D6A726 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E2CBE234BC96400D6A726 /* Score.swift */; };
+		FC4C7D1623609480007CAEBF /* RemoteImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C7D1523609480007CAEBF /* RemoteImageUrl.swift */; };
+		FC4C7D1823609B27007CAEBF /* LeaderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C7D1723609B27007CAEBF /* LeaderRowView.swift */; };
 		FCB29E7C234E2D3B004FCE32 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB29E7B234E2D3B004FCE32 /* DataService.swift */; };
 		FCB29E7F234E3542004FCE32 /* GistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB29E7E234E3542004FCE32 /* GistView.swift */; };
 		FCB29E81234E370C004FCE32 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB29E80234E370C004FCE32 /* Gist.swift */; };
@@ -94,6 +96,8 @@
 		FC3800072350DE0000F2940A /* ScoreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListViewModel.swift; sourceTree = "<group>"; };
 		FC3800092350E02D00F2940A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		FC3E2CBE234BC96400D6A726 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FC4C7D1523609480007CAEBF /* RemoteImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageUrl.swift; sourceTree = "<group>"; };
+		FC4C7D1723609B27007CAEBF /* LeaderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderRowView.swift; sourceTree = "<group>"; };
 		FCB29E7B234E2D3B004FCE32 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FCB29E7E234E3542004FCE32 /* GistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistView.swift; sourceTree = "<group>"; };
 		FCB29E80234E370C004FCE32 /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
@@ -270,6 +274,8 @@
 				FCB29E7E234E3542004FCE32 /* GistView.swift */,
 				FC3800092350E02D00F2940A /* ScoreView.swift */,
 				FC26323C235A453800CB725A /* LeaderBoardView.swift */,
+				FC4C7D1523609480007CAEBF /* RemoteImageUrl.swift */,
+				FC4C7D1723609B27007CAEBF /* LeaderRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -494,9 +500,11 @@
 				A09C53AB23464762000AC0CC /* AppDelegate.swift in Sources */,
 				FC26323D235A453800CB725A /* LeaderBoardView.swift in Sources */,
 				FCB29E81234E370C004FCE32 /* Gist.swift in Sources */,
+				FC4C7D1623609480007CAEBF /* RemoteImageUrl.swift in Sources */,
 				A0A5ADD023578D80004BA0B1 /* Environment.swift in Sources */,
 				FC263239235A43A800CB725A /* Leader.swift in Sources */,
 				FC26323B235A449700CB725A /* LeaderBoardViewModel.swift in Sources */,
+				FC4C7D1823609B27007CAEBF /* LeaderRowView.swift in Sources */,
 				A0F357482347CB2C000B34E3 /* TestView.swift in Sources */,
 				A09C53AD23464762000AC0CC /* SceneDelegate.swift in Sources */,
 				FC38000A2350E02D00F2940A /* ScoreView.swift in Sources */,

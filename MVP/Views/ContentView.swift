@@ -11,6 +11,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 0
  
+    init() {
+        UITabBar.appearance().barTintColor =  UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0)
+    }
+    
     var body: some View {
 
         TabView(selection: $selection){
@@ -43,7 +47,7 @@ struct ContentView: View {
 
 
             
-        }//.accentColor(Color(UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0))).accentColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/).background(/*@START_MENU_TOKEN@*/Color.red/*@END_MENU_TOKEN@*/).blendMode(/*@START_MENU_TOKEN@*/.darken/*@END_MENU_TOKEN@*/)
+        }.accentColor(.white)//.accentColor(Color(UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0))).accentColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/).background(/*@START_MENU_TOKEN@*/Color.red/*@END_MENU_TOKEN@*/).blendMode(/*@START_MENU_TOKEN@*/.darken/*@END_MENU_TOKEN@*/)
     }
 }
 

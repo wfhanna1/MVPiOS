@@ -16,14 +16,8 @@ struct LeaderBoardView: View {
             Image("HomeBackgroud")
                 .scaledToFit()
             List(model.Leaders){leader in
-
-                VStack(alignment: .leading){
-                    Text("Foosball").font(.headline).foregroundColor(.pink)
-                    Text("\(leader.player[0].fullName)").bold()
-                    Text("\(leader.average) Points")
-                }
-                
-            }
+                LeaderRowView(leader: leader)
+              }
         }
     }
 }

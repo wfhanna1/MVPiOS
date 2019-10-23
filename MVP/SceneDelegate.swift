@@ -21,21 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-        
-        let appearnce = UITabBarAppearance()
-        appearnce.configureWithOpaqueBackground()
-        appearnce.backgroundColor = UIColor.red
-        //appearnce.isTranslucent = false
-        
-        UITabBar.appearance().shadowImage = UIImage()
-        UITabBar.appearance().backgroundImage = UIImage()
-        UITabBar.appearance().isTranslucent = true
-        UITabBar.appearance().backgroundColor = UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0)
-        
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.white], for: .selected)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.backgroundColor : UIColor.blue], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.red], for: .disabled)
-        
+               
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
