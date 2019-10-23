@@ -13,6 +13,7 @@ struct ContentView: View {
  
     init() {
         UITabBar.appearance().barTintColor =  UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0)
+        //LeaderBoardViewModel.init()
     }
     
     var body: some View {
