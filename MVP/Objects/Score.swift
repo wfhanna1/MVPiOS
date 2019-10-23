@@ -53,7 +53,7 @@ struct Player: Codable {
     var id: Int
     var fullName: String
     var emailAddress: String
-    //var profilePhoto: String
+    var profilePhoto: String?
 }
 
 //typealias Welcome = [WelcomeElement]

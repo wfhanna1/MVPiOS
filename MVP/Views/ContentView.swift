@@ -11,34 +11,43 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 0
  
+    init() {
+        UITabBar.appearance().barTintColor =  UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0)
+    }
+    
     var body: some View {
+
         TabView(selection: $selection){
-            Text("First View")
+            LeaderBoardView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image(systemName: "list.number")
+                        Text("Scores")
                     }
                 }
                 .tag(0)
             ScoreView()
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(systemName: "person.3")
+                        Text("Games")
                     }
                 }	
                 .tag(1)
-           GistView()
+           LeaderBoardView()
                 .tabItem {
                       VStack {
-                          Image("first")
-                          Text("Third")
+                          Image(systemName: "list.number")
+                          Text("Scores")
                       }
-                  }
-                  .tag(2)
-        }
+                }
+           .tag(2)
+            
+
+
+            
+        }.accentColor(.white)//.accentColor(Color(UIColor(red:0.30, green:0.16, blue:0.36, alpha:1.0))).accentColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/).background(/*@START_MENU_TOKEN@*/Color.red/*@END_MENU_TOKEN@*/).blendMode(/*@START_MENU_TOKEN@*/.darken/*@END_MENU_TOKEN@*/)
     }
 }
 

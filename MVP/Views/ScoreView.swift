@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ScoreView: View {
     
-    @State var model = ScoreListViewModel()
+    @ObservedObject var model = ScoreListViewModel()
     
     var body: some View {
      
