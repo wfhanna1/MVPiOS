@@ -15,6 +15,7 @@ public enum Environment {
         static let baseUrl = "BASE_URL"
         static let scoreUrl = "SCORE_URL"
         static let leaderboardUrl = "LEADERBOARD"
+        static let playersUrl = "PLAYERS"
       }
     }
     
@@ -53,4 +54,11 @@ public enum Environment {
         }
         return leaderboardUrl
       }()
+    
+    static let playersUrl: String = {
+      guard let playersUrl = Environment.infoDictionary[Keys.Plist.playersUrl] as? String else {
+        fatalError("LEADERBOARD not set in plist for this environment")
+      }
+      return playersUrl
+    }()
 }

@@ -49,7 +49,7 @@ struct Game: Codable {
 }
 
 // MARK: - PlayerA
-struct Player: Codable {
+struct Player: Codable, Identifiable {
     var id: Int
     var fullName: String
     var emailAddress: String
