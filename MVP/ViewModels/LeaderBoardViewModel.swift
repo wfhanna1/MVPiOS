@@ -34,7 +34,7 @@ final class LeaderBoardViewModel: ObservableObject {
 
     func fetchLeaders(){
 
-        ScoreRepo.shared.fetchLeaderBoard() { (result) in
+        APIServices.shared.fetchLeaderBoard() { (result) in
             switch result {
             case .success(let scoresReturn):
                 self.Leaders = scoresReturn

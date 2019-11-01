@@ -32,7 +32,7 @@ final class AddGameViewModel: ObservableObject {
 
     func fetchPlayers(){
 
-        ScoreRepo.shared.fetchPlayers() { (result) in
+        APIServices.shared.fetchPlayers() { (result) in
             switch result {
             case .success(let playersReturn):
                 self.players = playersReturn

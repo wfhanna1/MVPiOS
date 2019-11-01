@@ -8,9 +8,9 @@
 
 import Foundation
 
-class ScoreRepo
+class APIServices
 {
-    static let shared = ScoreRepo()
+    static let shared = APIServices()
     
     
     func fetchScores(completion: @escaping (Result<[score], Error>) -> Void){
