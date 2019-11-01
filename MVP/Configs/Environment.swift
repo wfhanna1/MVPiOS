@@ -57,7 +57,7 @@ public enum Environment {
     
     static let playersUrl: String = {
       guard let playersUrl = Environment.infoDictionary[Keys.Plist.playersUrl] as? String else {
-        fatalError("LEADERBOARD not set in plist for this environment")
+        fatalError("PLAYERS not set in plist for this environment")
       }
       return playersUrl
     }()
