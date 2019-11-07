@@ -25,7 +25,7 @@ final class ScoreListViewModel: ObservableObject {
 
     func fetchScores(){
 
-        ScoreRepo.shared.fetchScores { (result) in
+        APIServices.shared.fetchScores { (result) in
             switch result {
             case .success(let scoresReturn):
                 self.scores = scoresReturn

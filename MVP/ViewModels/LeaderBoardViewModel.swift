@@ -12,20 +12,29 @@ import Combine
 
 final class LeaderBoardViewModel: ObservableObject {
     let didChange = PassthroughSubject<LeaderBoardViewModel,Never>()
-
+    let objectWillChange = ObservableObjectPublisher()
+    
     init() {
         fetchLeaders()
     }
 
     var Leaders = [Leader](){
+        willSet{
+            DispatchQueue.main.async {
+                self.objectWillChange.send()
+            }
+//            self.objectWillChange
+//                .receive(on: RunLoop.main)
+//                .send()
+        }
         didSet {
-            didChange.send(self)
+            //didChange.send(self)
         }
     }
 
     func fetchLeaders(){
 
-        ScoreRepo.shared.fetchLeaderBoard() { (result) in
+        APIServices.shared.fetchLeaderBoard() { (result) in
             switch result {
             case .success(let scoresReturn):
                 self.Leaders = scoresReturn

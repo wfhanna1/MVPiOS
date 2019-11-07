@@ -74,5 +74,7 @@
 	</array>
 	<key>LEADERBOARD</key>
 	<string>$(LEADERBOARD)</string>
+	<key>PLAYERS</key>
+	<string>$(PLAYERS)</string>
 </dict>
 </plist>

@@ -23,10 +23,12 @@
 		A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357432347B4BD000B34E3 /* ApiWrapper.swift */; };
 		A0F357482347CB2C000B34E3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F357472347CB2C000B34E3 /* TestView.swift */; };
 		C9F790ECEA2227DE8EE81BDA /* Pods_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */; };
+		FC0B1C70236CBCB80087015A /* AddGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B1C6F236CBCB80087015A /* AddGameView.swift */; };
+		FC0B1C72236CBCC30087015A /* AddGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B1C71236CBCC30087015A /* AddGameViewModel.swift */; };
 		FC263239235A43A800CB725A /* Leader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC263238235A43A800CB725A /* Leader.swift */; };
 		FC26323B235A449700CB725A /* LeaderBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC26323A235A449700CB725A /* LeaderBoardViewModel.swift */; };
 		FC26323D235A453800CB725A /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC26323C235A453800CB725A /* LeaderBoardView.swift */; };
-		FC3055E7234D088F00907AF5 /* ScoreRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3055E6234D088F00907AF5 /* ScoreRepo.swift */; };
+		FC3055E7234D088F00907AF5 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3055E6234D088F00907AF5 /* APIServices.swift */; };
 		FC3800082350DE0000F2940A /* ScoreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3800072350DE0000F2940A /* ScoreListViewModel.swift */; };
 		FC38000A2350E02D00F2940A /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3800092350E02D00F2940A /* ScoreView.swift */; };
 		FC3E2CBF234BC96400D6A726 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E2CBE234BC96400D6A726 /* Score.swift */; };
@@ -89,10 +91,12 @@
 		E96267416627AB1DF7792373 /* Pods-MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPTests.debug.xcconfig"; path = "Target Support Files/Pods-MVPTests/Pods-MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E964E77FAF6CD3936874117D /* Pods-MVP.debug (development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.debug (development.xcconfig"; path = "Target Support Files/Pods-MVP/Pods-MVP.debug (development.xcconfig"; sourceTree = "<group>"; };
 		ED88D26370AE84DBDD0128D6 /* Pods_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0B1C6F236CBCB80087015A /* AddGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGameView.swift; sourceTree = "<group>"; };
+		FC0B1C71236CBCC30087015A /* AddGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGameViewModel.swift; sourceTree = "<group>"; };
 		FC263238235A43A800CB725A /* Leader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leader.swift; sourceTree = "<group>"; };
 		FC26323A235A449700CB725A /* LeaderBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewModel.swift; sourceTree = "<group>"; };
 		FC26323C235A453800CB725A /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
-		FC3055E6234D088F00907AF5 /* ScoreRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepo.swift; sourceTree = "<group>"; };
+		FC3055E6234D088F00907AF5 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		FC3800072350DE0000F2940A /* ScoreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreListViewModel.swift; sourceTree = "<group>"; };
 		FC3800092350E02D00F2940A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		FC3E2CBE234BC96400D6A726 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
@@ -250,7 +254,7 @@
 		FC3055E5234D086C00907AF5 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
-				FC3055E6234D088F00907AF5 /* ScoreRepo.swift */,
+				FC3055E6234D088F00907AF5 /* APIServices.swift */,
 				FCB29E7B234E2D3B004FCE32 /* DataService.swift */,
 			);
 			path = Repos;
@@ -269,6 +273,7 @@
 		FCB29E7D234E351E004FCE32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC0B1C6F236CBCB80087015A /* AddGameView.swift */,
 				A09C53AE23464762000AC0CC /* ContentView.swift */,
 				A0F357472347CB2C000B34E3 /* TestView.swift */,
 				FCB29E7E234E3542004FCE32 /* GistView.swift */,
@@ -283,6 +288,7 @@
 		FCB29E82234E5BFE004FCE32 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FC0B1C71236CBCC30087015A /* AddGameViewModel.swift */,
 				FCB29E83234E5C5B004FCE32 /* GistListViewModel.swift */,
 				FC3800072350DE0000F2940A /* ScoreListViewModel.swift */,
 				FC26323A235A449700CB725A /* LeaderBoardViewModel.swift */,
@@ -497,6 +503,7 @@
 			files = (
 				FCB29E7C234E2D3B004FCE32 /* DataService.swift in Sources */,
 				FCB29E84234E5C5B004FCE32 /* GistListViewModel.swift in Sources */,
+				FC0B1C70236CBCB80087015A /* AddGameView.swift in Sources */,
 				A09C53AB23464762000AC0CC /* AppDelegate.swift in Sources */,
 				FC26323D235A453800CB725A /* LeaderBoardView.swift in Sources */,
 				FCB29E81234E370C004FCE32 /* Gist.swift in Sources */,
@@ -508,7 +515,8 @@
 				A0F357482347CB2C000B34E3 /* TestView.swift in Sources */,
 				A09C53AD23464762000AC0CC /* SceneDelegate.swift in Sources */,
 				FC38000A2350E02D00F2940A /* ScoreView.swift in Sources */,
-				FC3055E7234D088F00907AF5 /* ScoreRepo.swift in Sources */,
+				FC3055E7234D088F00907AF5 /* APIServices.swift in Sources */,
+				FC0B1C72236CBCC30087015A /* AddGameViewModel.swift in Sources */,
 				A0F357442347B4BD000B34E3 /* ApiWrapper.swift in Sources */,
 				FC3800082350DE0000F2940A /* ScoreListViewModel.swift in Sources */,
 				FCB29E7F234E3542004FCE32 /* GistView.swift in Sources */,
