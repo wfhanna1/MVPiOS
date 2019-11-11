@@ -22,8 +22,12 @@
 	<string>1</string>
 	<key>HTTP_SCHEME</key>
 	<string>$(HTTP_SCHEME)</string>
+	<key>LEADERBOARD</key>
+	<string>$(LEADERBOARD)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>PLAYERS</key>
+	<string>$(PLAYERS)</string>
 	<key>SCORE_URL</key>
 	<string>$(SCORE_URL)</string>
 	<key>UIApplicationSceneManifest</key>
@@ -72,9 +76,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>LEADERBOARD</key>
-	<string>$(LEADERBOARD)</string>
-	<key>PLAYERS</key>
-	<string>$(PLAYERS)</string>
 </dict>
 </plist>
