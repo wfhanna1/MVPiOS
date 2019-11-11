@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        let test = ScoresViewModel()
+        // let test = ScoresViewModel()
 //        test.GetCurrentScores(userCompletionHandler: {data, error in
 //            print(data)
 //        })
