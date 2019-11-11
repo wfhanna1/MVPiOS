@@ -634,7 +634,8 @@
 			baseConfigurationReference = A0A5ADD423579339004BA0B1 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"MVP/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQ2528ADM;
 				ENABLE_PREVIEWS = YES;
@@ -643,8 +644,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insight.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.insight.mvpios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MVP;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -754,7 +756,8 @@
 			baseConfigurationReference = A0A5ADD223579332004BA0B1 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"MVP/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQ2528ADM;
 				ENABLE_PREVIEWS = YES;
@@ -763,8 +766,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insight.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.insight.mvpios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MVP;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -933,7 +937,8 @@
 			baseConfigurationReference = 28E9E87D10EF3ABE5F53B085 /* Pods-MVP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"MVP/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQ2528ADM;
 				ENABLE_PREVIEWS = YES;
@@ -942,8 +947,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insight.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.insight.mvpios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MVP;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -954,7 +960,8 @@
 			baseConfigurationReference = 5C9D171227422D49E161681F /* Pods-MVP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"MVP/Preview Content\"";
 				DEVELOPMENT_TEAM = GAQ2528ADM;
 				ENABLE_PREVIEWS = YES;
@@ -963,8 +970,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insight.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.insight.mvpios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MVP;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
