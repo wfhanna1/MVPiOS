@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		248EFBA9F1C40BCC08466DB4 /* Pods_MVP_MVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB01FE4A48F2DC193F64AE5 /* Pods_MVP_MVPUITests.framework */; };
 		28274E0DEC9E76D6D4E7C188 /* Pods_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321D83F6A02412878A95AB64 /* Pods_MVPTests.framework */; };
+		A060A225237B16DA00561A08 /* Loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A060A224237B16DA00561A08 /* Loading.png */; };
 		A09C53AB23464762000AC0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C53AA23464762000AC0CC /* AppDelegate.swift */; };
 		A09C53AD23464762000AC0CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C53AC23464762000AC0CC /* SceneDelegate.swift */; };
 		A09C53AF23464762000AC0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09C53AE23464762000AC0CC /* ContentView.swift */; };
@@ -66,6 +67,7 @@
 		5C9D171227422D49E161681F /* Pods-MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.release.xcconfig"; path = "Target Support Files/Pods-MVP/Pods-MVP.release.xcconfig"; sourceTree = "<group>"; };
 		6F4CC7450368EE09DFB676EB /* Pods-MVP-MVPUITests.release (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-MVPUITests.release (production).xcconfig"; path = "Target Support Files/Pods-MVP-MVPUITests/Pods-MVP-MVPUITests.release (production).xcconfig"; sourceTree = "<group>"; };
 		731751BB62A2F346BC9552AA /* Pods-MVP-MVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-MVPUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVP-MVPUITests/Pods-MVP-MVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A060A224237B16DA00561A08 /* Loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading.png; path = ../../../Downloads/Loading.png; sourceTree = "<group>"; };
 		A09C53A723464762000AC0CC /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09C53AA23464762000AC0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09C53AC23464762000AC0CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				A09C53B023464763000AC0CC /* Assets.xcassets */,
 				A09C53B523464763000AC0CC /* LaunchScreen.storyboard */,
 				A09C53B823464763000AC0CC /* Info.plist */,
+				A060A224237B16DA00561A08 /* Loading.png */,
 				A09C53B223464763000AC0CC /* Preview Content */,
 			);
 			path = MVP;
@@ -405,6 +408,7 @@
 			files = (
 				A09C53B723464763000AC0CC /* LaunchScreen.storyboard in Resources */,
 				A0A5ADD323579332004BA0B1 /* Production.xcconfig in Resources */,
+				A060A225237B16DA00561A08 /* Loading.png in Resources */,
 				A09C53B423464763000AC0CC /* Preview Assets.xcassets in Resources */,
 				A09C53B123464763000AC0CC /* Assets.xcassets in Resources */,
 				A0A5ADD52357933A004BA0B1 /* Development.xcconfig in Resources */,
